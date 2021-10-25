@@ -1,0 +1,20 @@
+body {
+  background-color: plum;
+}
+
+.front {
+  background: yellow;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+}
+.front .front__hero {
+  background-color: pink;
+}
+.front .front__title {
+  font-weight: weight(regular);
+  color: red;
+}
+.front .front__title:hover {
+  color: black;
+}
