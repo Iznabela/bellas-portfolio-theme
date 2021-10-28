@@ -86,23 +86,25 @@ html.k-webkit.k-webkit78 {
 }
 .front__container {
   padding: 20px;
-  background-color: grey;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
 }
 .front__container__title {
+  margin: 20px;
+  font-size: 82px;
   font-weight: weight(regular);
-  color: red;
+  color: #0a0a0a;
   cursor: pointer;
 }
 .front__container__title:hover {
-  color: black;
+  color: #1b1b1b;
 }
-.front__container__description {
+.front__container__title__description {
+  font-size: 24px;
   font-weight: weight(light);
-  color: red;
+  color: #0a0a0a;
 }
 
 @media only screen and (max-width: 600px) {
