@@ -86,25 +86,29 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
 
     &__container {
       padding: 20px;
-      background-color: grey;
+      background-color: whitesmoke;
       display: flex;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start;
 
     &__title {
+        margin: 20px;
+        font-size: 82px;
         font-weight: weight(regular);
-        color: red;
+        color: rgb(10, 10, 10);
         cursor: pointer;
       
         &:hover {
-          color: black;
+          color: rgb(27, 27, 27);
         }
+
+        &__description {
+          font-size: 24px;
+          font-weight: weight(light);
+          color: rgb(10, 10, 10);
       }
-    &__description {
-        font-weight: weight(light);
-        color: red;
-    }
+      }
+    
     }
 }
 
