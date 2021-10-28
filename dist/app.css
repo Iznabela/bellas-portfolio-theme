@@ -39,60 +39,77 @@ html.k-webkit.k-webkit78 {
 }
 
 .navbar .navbar-expand-md .navbar-light {
-  background-color: rgba(168, 53, 53, 0.623);
+  margin: 0;
+  padding: 0;
+  background-color: #F6A09A;
   align-items: flex-end;
 }
 
+.custom-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
 .nav-title {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
   align-self: center;
-  font-size: 48px;
-  margin: 3%;
+  font-size: 36px;
+  margin: 1%;
   text-decoration: none;
   list-style-type: none;
-  color: rgba(0, 0, 0, 0.616);
+  color: #111111;
 }
 .nav-title:hover {
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(17, 17, 17, 0.678);
 }
 
 .navbar-links {
-  font-size: 38px;
-  color: rgba(0, 0, 0, 0.09);
+  font-size: 18px;
+  color: #111111;
 }
 
 .nav-link {
-  color: rgba(0, 0, 0, 0.616);
+  color: #111111;
 }
 .nav-link:hover {
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(17, 17, 17, 0.678);
 }
 
 .front {
-  margin: 3%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 600px;
+  flex-direction: column;
+  margin: 2%;
+  width: 70%;
+  height: 60%;
   background-color: whitesmoke;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
-  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.front__banner {
+  height: 40px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #F6A09A, #8A1F1D);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
 .front__container {
-  padding: 20px;
+  width: 100%;
+  height: 100%;
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 .front__container__title {
-  margin: 20px;
+  padding: 5%;
   font-size: 82px;
   font-weight: weight(regular);
   color: #0a0a0a;
@@ -107,9 +124,16 @@ html.k-webkit.k-webkit78 {
   color: #0a0a0a;
 }
 
-@media only screen and (max-width: 600px) {
-  .front {
-    width: 200px;
-    height: 300px;
+@media only screen and (max-width: 800px) {
+  .front__container__title {
+    font-size: 42px;
+  }
+  .front__container__description {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .custom-nav {
+    margin-bottom: 20%;
   }
 }
