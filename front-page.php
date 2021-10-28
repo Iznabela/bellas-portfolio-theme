@@ -6,6 +6,7 @@ $backgroundImageArray = get_field('background_image');
 $backgroundImage = $backgroundImageArray['sizes']['large'];
 $frontTitle = get_field('title');
 $frontDescription = get_field('description');
+$projectsLink = get_field('projects-link');
 ?>
 
 <div class="background" <?php if( $backgroundImage ) : ?>
@@ -17,7 +18,7 @@ $frontDescription = get_field('description');
   <div class="front__container">
     <h1 class="front__container__title"><?php echo $frontTitle; ?>
       <p class="front__container__title__description"><?php echo $frontDescription ?></p>
-      <a class="front__container__title__button btn btn-success"></a>
+      <a class="front__container__title__button btn btn-success" href="<?php echo $projectsLink ?>"><?php echo $projectsLink ?></a>
     </h1>
   </div>
 </section>
