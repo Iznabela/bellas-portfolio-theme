@@ -4,6 +4,7 @@ get_header();
 
 $backgroundImageArray = get_field('background_image');
 $backgroundImage = $backgroundImageArray['sizes']['large'];
+$frontTitle = get_field('title');
 ?>
 
 <div class="background" <?php if( $backgroundImage ) : ?>
@@ -12,10 +13,10 @@ $backgroundImage = $backgroundImageArray['sizes']['large'];
     <!-- <img src="<?php //echo $backgroundImage; ?>" class="backcontainer__photo" id="backcontainer__photo"> -->
 </div>
 <section class="front">
-  <div class="main__container">
-    <h1 class="main__container__title">TITLE
-      <p class="main__container__description">tjena tjena</p>
-      <a class="main__container__btn btn btn--round"></a>
+  <div class="front__container">
+    <h1 class="front__container__title"><?php echo $frontTitle; ?>
+      <p class="front__container__title__description">tjena tjena</p>
+      <a class="front__container__title__ btn btn btn--round"></a>
     </h1>
   </div>
 </section>
