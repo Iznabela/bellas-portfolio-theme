@@ -17,7 +17,8 @@ Har gjort en field-group i wp-admin för front-page som kund/admin ska kunna än
 
 ![3](https://user-images.githubusercontent.com/70195743/139407412-fd2eee0f-a9cd-44cc-ba51-d69997a74be9.PNG)
 
-Har gjort en till field group för ### Background där användaren ska kunna lägga till en bakgrunds-bild till sidan:
+### Background
+Har gjort en till field group där användaren ska kunna lägga till en bakgrunds-bild till sidan:
 
 ![7](https://user-images.githubusercontent.com/70195743/139407847-8afdd888-70e7-4a33-a509-dcbe2f2a3869.PNG)
 
