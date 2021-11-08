@@ -14,13 +14,16 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace;
   vertical-align: baseline;
 }
 
 html body{
+  background-color: whitesmoke;
   margin-top: 0px !important;
 }
+
+
 
 html.k-webkit.k-webkit78 { margin-top: 0 !important; }
 
@@ -44,90 +47,159 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
 }
 
 .custom-nav {
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  position:fixed;
+  width: 100%;
+  height: 5%;
   top: 0px;
   left: 0px;
-  z-index: 1;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.829);
 }
 
 .nav-title {
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
   align-self: center;
-  font-size: 36px;
+  font-size: 18px;
   margin: 1%;
   text-decoration: none;
   list-style-type: none;
-  color: rgb(17, 17, 17);
+  color: rgb(221, 221, 221);
 
   &:hover {
-    color: rgba(17, 17, 17, 0.678);
+    color: rgba(182, 182, 182, 0.678);
   }
 }
 
 .navbar-links {
-  font-size: 18px;
-  color: rgb(17, 17, 17);
+  font-size: 16px;
+  color: rgb(189, 189, 189);
 }
 
 .nav-link {
-  color: rgb(17, 17, 17);
+  color: rgb(194, 194, 194);
 
   &:hover {
-    color: rgba(17, 17, 17, 0.678);
+    color: rgba(177, 177, 177, 0.678);
   }
 }
 
 .front {
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    width: 70%;
-    height: 60%;
-    background-color: whitesmoke;
+    align-items: center;
+    width: 100%;
+    height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 1;
 
-    &__banner {
-      height: 40px;
-      width: 100%;
-      background-image: linear-gradient(to bottom right, #F6A09A, #8A1F1D);
-      filter: blur(0px);
-      -webkit-filter: blur(0px);
-    }
+    // &__banner {
+    //   height: 40px;
+    //   width: 100%;
+    //   background-image: linear-gradient(to bottom right, #F6A09A, #8A1F1D);
+    //   filter: blur(0px);
+    //   -webkit-filter: blur(0px);
+    // }
 
     &__container {
+      margin: 2%;
       width: 100%;
-      height: 100%;
-      background-color: whitesmoke;
+      height: 90%;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+      flex-direction: column;
+      background-color: whitesmoke;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-        &__title {
+        &__content {
+          width: 50%;
+          background-color: whitesmoke;
+
+          &__title {
             padding: 5%;
             font-size: 82px;
             font-weight: weight(regular);
-            color: rgb(10, 10, 10);
-            cursor: pointer;
+            color: rgb(189, 48, 48);
       
-            &:hover {
-              color: rgb(27, 27, 27);
+              &:hover {
+                color: rgb(27, 27, 27);
+              }
             }
+            
+            &__under-title {
+              padding: 5%;
+              font-size: 36px;
+              font-weight: weight(regular);
+              color: rgb(189, 48, 48);
+        
+              &:hover {
+                color: rgb(27, 27, 27);
+              }
 
-        &__description {
-          font-size: 24px;
-          font-weight: weight(light);
-          color: rgb(10, 10, 10);
-      }
-      }
-    
+            &__description {
+              padding: 5%;
+              font-size: 18px;
+              font-weight: weight(light);
+              color: rgb(10, 10, 10);
+            }
+            &__image {
+              width: 10%;
+            }
+        }
+     }
     }
+    &__arrow-down {
+      color:rgba(27, 27, 27, 0.705);
+
+      &:hover {
+        color: rgb(17, 17, 17);
+      }
+    }
+}
+
+.about__container {
+  background-color: whitesmoke;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  &__description-container {
+    margin: 5%;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+}
+
+.projects__container {
+  background-color: whitesmoke;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  &__description-container {
+    margin: 5%;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
 }
 
 @media only screen and (max-width: 800px) {

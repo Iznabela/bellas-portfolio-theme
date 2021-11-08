@@ -19,3 +19,21 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+add_theme_support('post-thumbnails');
+add_post_type_support( 'projects', 'thumbnail' ); 
+
+function create_posttype() {
+	register_post_type( 'projects',
+	  array(
+		'labels' => array(
+		  'name' => __( 'projects' ),
+		  'singular_name' => __( 'project' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'projects'),
+	  )
+	);
+  }
+  add_action( 'init', 'create_posttype' );
