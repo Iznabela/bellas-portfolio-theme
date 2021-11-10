@@ -39,11 +39,16 @@ html.k-webkit.k-webkit78 {
   -webkit-filter: blur(8px);
 }
 
-.navbar .navbar-expand-md .navbar-light {
+.projects-background {
   margin: 0;
   padding: 0;
-  background-color: #F6A09A;
-  align-items: flex-end;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .custom-nav {
@@ -56,7 +61,9 @@ html.k-webkit.k-webkit78 {
   top: 0px;
   left: 0px;
   z-index: 2;
-  background-color: #477890;
+  background-color: #f25f5c;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .nav-title {
@@ -67,22 +74,22 @@ html.k-webkit.k-webkit78 {
   margin: 1%;
   text-decoration: none;
   list-style-type: none;
-  color: #dddddd;
+  color: white;
 }
 .nav-title:hover {
-  color: rgba(182, 182, 182, 0.678);
+  color: rgba(245, 245, 245, 0.918);
 }
 
 .navbar-links {
   font-size: 16px;
-  color: #bdbdbd;
+  color: white;
 }
 
 .nav-link {
-  color: #c2c2c2;
+  color: white;
 }
 .nav-link:hover {
-  color: rgba(177, 177, 177, 0.678);
+  color: rgba(245, 245, 245, 0.918);
 }
 
 .front {
@@ -209,27 +216,66 @@ html.k-webkit.k-webkit78 {
   color: white;
 }
 
-.projects__container {
-  background-color: whitesmoke;
+.projects {
   display: flex;
-  justify-items: center;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-.projects__container__description-container {
-  margin: 5%;
+.projects__container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.projects__container__description-container__title {
+.projects__container__content {
+  padding: 5% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  height: 100%;
+}
+.projects__container__content__title {
   font-size: 48px;
 }
-.projects__container__description-container__description {
-  font-size: 14px;
+.projects__container__content__posts {
+  display: flex;
+  flex-direction: column;
 }
-
+.projects__container__content__posts__post {
+  padding: 2% 0 2% 0;
+}
+.projects__container__content__posts__post__title {
+  font-size: 24px;
+}
 .footer__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-color: yellow;
+  background-color: #252525;
+  box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333;
+  color: whitesmoke;
   padding: 10%;
+}
+.footer__container__content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.footer__container__content__copyright {
+  align-self: flex-end;
 }
 
 .github-icon {
