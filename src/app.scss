@@ -56,7 +56,7 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
   top: 0px;
   left: 0px;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: #477890;
 }
 
 .nav-title {
@@ -92,7 +92,7 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,45 +112,41 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
       width: 100%;
       height: 90%;
       display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      background-color: whitesmoke;
+      justify-content: center;
+      background-color:rgb(22, 22, 22);
+      color: blanchedalmond;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         &__content {
-          width: 50%;
-          background-color: whitesmoke;
+          padding: 5% 0 5% 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 60%;
+          height: 100%;
+          background-color:rgb(22, 22, 22);
 
           &__title {
-            padding: 5%;
             font-size: 82px;
             font-weight: weight(regular);
-            color: rgb(189, 48, 48);
-      
-              &:hover {
-                color: rgb(27, 27, 27);
-              }
             }
             
             &__under-title {
-              padding: 5%;
               font-size: 36px;
               font-weight: weight(regular);
-              color: rgb(189, 48, 48);
-        
-              &:hover {
-                color: rgb(27, 27, 27);
-              }
 
             &__description {
-              padding: 5%;
+              margin: 2%;
               font-size: 18px;
               font-weight: weight(light);
-              color: rgb(10, 10, 10);
             }
             &__image {
+              margin-bottom: 5%;
               width: 10%;
+            }
+            &__btn {
+              margin-bottom: 10%;
             }
         }
      }
@@ -164,11 +160,27 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
     }
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about__container {
+  width: 100%;
   background-color: whitesmoke;
   display: flex;
   justify-items: center;
   align-items: center;
+  padding: 10%;
+
+  &__image-container {
+    width: 20%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   &__description-container {
     margin: 5%;
@@ -179,6 +191,45 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
 
     &__description {
       font-size: 14px;
+    }
+  }
+}
+
+.contact__container {
+  background-color:rgb(22, 22, 22);
+  color:blanchedalmond;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    margin: 10% 0 10% 0;
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 100%;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__description {
+      padding: 2% 0 2% 0;
+      font-size: 14px;
+    }
+
+    a {
+      list-style: none;
+      text-decoration: none;
+      color:blanchedalmond;
+
+      :hover {
+        color: white;
+      }
     }
   }
 }
@@ -202,10 +253,28 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
   }
 }
 
+.footer__container {
+  display: flex;
+  width: 100%;
+  background-color: yellow;
+  padding: 10%;
+}
+
+.github-icon {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__icon {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .front {
 
     &__container {
+
+      &__content {
 
         &__title {
           font-size: 42px;
@@ -214,6 +283,8 @@ html.k-webkit.k-webkit78 { margin-top: 0 !important; }
         &__description {
           font-size: 16px;
         }
+      }
+        
     }
   }
   

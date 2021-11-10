@@ -56,7 +56,7 @@ html.k-webkit.k-webkit78 {
   top: 0px;
   left: 0px;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: #477890;
 }
 
 .nav-title {
@@ -90,7 +90,7 @@ html.k-webkit.k-webkit78 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 70%;
+  height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,42 +102,40 @@ html.k-webkit.k-webkit78 {
   width: 100%;
   height: 90%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: whitesmoke;
+  justify-content: center;
+  background-color: #161616;
+  color: blanchedalmond;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .front__container__content {
-  width: 50%;
-  background-color: whitesmoke;
+  padding: 5% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  height: 100%;
+  background-color: #161616;
 }
 .front__container__content__title {
-  padding: 5%;
   font-size: 82px;
   font-weight: weight(regular);
-  color: #bd3030;
-}
-.front__container__content__title:hover {
-  color: #1b1b1b;
 }
 .front__container__content__under-title {
-  padding: 5%;
   font-size: 36px;
   font-weight: weight(regular);
-  color: #bd3030;
-}
-.front__container__content__under-title:hover {
-  color: #1b1b1b;
 }
 .front__container__content__under-title__description {
-  padding: 5%;
+  margin: 2%;
   font-size: 18px;
   font-weight: weight(light);
-  color: #0a0a0a;
 }
 .front__container__content__under-title__image {
+  margin-bottom: 5%;
   width: 10%;
+}
+.front__container__content__under-title__btn {
+  margin-bottom: 10%;
 }
 .front__arrow-down {
   color: rgba(27, 27, 27, 0.705);
@@ -146,11 +144,26 @@ html.k-webkit.k-webkit78 {
   color: #111111;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about__container {
+  width: 100%;
   background-color: whitesmoke;
   display: flex;
   justify-items: center;
   align-items: center;
+  padding: 10%;
+}
+.about__container__image-container {
+  width: 20%;
+}
+.about__container__image-container img {
+  width: 100%;
+  height: auto;
 }
 .about__container__description-container {
   margin: 5%;
@@ -160,6 +173,40 @@ html.k-webkit.k-webkit78 {
 }
 .about__container__description-container__description {
   font-size: 14px;
+}
+
+.contact__container {
+  background-color: #161616;
+  color: blanchedalmond;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__container__content {
+  margin: 10% 0 10% 0;
+  padding: 3% 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+}
+.contact__container__content__title {
+  font-size: 48px;
+}
+.contact__container__content__description {
+  padding: 2% 0 2% 0;
+  font-size: 14px;
+}
+.contact__container__content a {
+  list-style: none;
+  text-decoration: none;
+  color: blanchedalmond;
+}
+.contact__container__content a :hover {
+  color: white;
 }
 
 .projects__container {
@@ -178,11 +225,26 @@ html.k-webkit.k-webkit78 {
   font-size: 14px;
 }
 
+.footer__container {
+  display: flex;
+  width: 100%;
+  background-color: yellow;
+  padding: 10%;
+}
+
+.github-icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+.github-icon__icon {
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 800px) {
-  .front__container__title {
+  .front__container__content__title {
     font-size: 42px;
   }
-  .front__container__description {
+  .front__container__content__description {
     font-size: 16px;
   }
 }
