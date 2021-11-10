@@ -6,7 +6,7 @@ $backgroundImageArray = get_field('background_image');
 $backgroundImage = $backgroundImageArray['sizes']['large'];
 $frontTitle = get_field('title');
 $frontDescription = get_field('description');
-$projectsLink = get_field('projects-link');
+$github = get_field('github_link');
 ?>
 
 <div class="background" <?php if( $backgroundImage ) : ?>
@@ -20,7 +20,10 @@ $projectsLink = get_field('projects-link');
       <h1 class="front__container__content__title"><?php echo $frontTitle; ?></h1> 
       <p class="front__container__content__under-title">under title</p>
       <p class="front__container__content__description"><?php echo $frontDescription ?></p>
-      <a class="front__container__content__button btn btn btn-outline-dark" href="<?php echo $projectsLink ?>"><?php echo $projectsLink ?></a>
+      <div class="front__container__content__links">
+        <a class="front__container__content__links__projects btn btn-outline-light" href="/wordpress/projects">Projects</a>
+        <a class="front__container__content__links__button btn btn-outline-light" href="<?php echo $github ?>"><?php echo $github ?></a>
+      </div>
     </div>
   </div>
   <a href="#about">
@@ -35,6 +38,9 @@ $projectsLink = get_field('projects-link');
 	<?php get_template_part('about'); ?>
 </section>
 
+<section class="contact" id="contact">
+  <?php get_template_part('contact'); ?>
+</section>
 
 <?php
 get_footer();
