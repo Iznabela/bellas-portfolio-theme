@@ -1,22 +1,15 @@
 <?php
 
 get_header();
-
-$backgroundImageArray = get_field('projects_background_image');
-$backgroundImage = $backgroundImageArray['sizes']['large'];
-
 ?>
 
-<div class="projects-background" <?php if ( $backgroundImage ) : ?>
-        style="background-image: url(<?php echo $backgroundImage; ?>);"
-  <?php endif; ?>>
-</div>
 <section class="projects" id="projects">
   <div class="projects__container">
     <div class="projects__container__content">
       <h1 class="projects__container__content__title">PROJECTS</h1>
       <div class="projects__container__content__posts">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+        $id = get_the_ID(); ?>
         <div class="projects__container__content__posts__post">
           <h2 class="projects__container__content__posts__post__title"><?php echo the_title(); ?></h2>
           <p class="projects__container__content__posts__post__description"><?php echo the_excerpt(); ?></p>
