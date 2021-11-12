@@ -15,14 +15,15 @@ $github = get_field('github_link');
     <!-- <img src="<?php //echo $backgroundImage; ?>" class="backcontainer__photo" id="backcontainer__photo"> -->
 </div>
 <section class="front" id="front">
+<div class="front__banner"></div>
   <div class="front__container">
     <div class="front__container__content">
       <h1 class="front__container__content__title"><?php echo $frontTitle; ?></h1> 
       <p class="front__container__content__under-title">under title</p>
       <p class="front__container__content__description"><?php echo $frontDescription ?></p>
       <div class="front__container__content__links">
-        <a class="front__container__content__links__projects btn btn-outline-light" href="/wordpress/projects">Projects</a>
-        <a class="front__container__content__links__button btn btn-outline-light" href="<?php echo $github ?>"><?php echo $github ?></a>
+        <a class="front__container__content__links__link" href="/wordpress/projects">Projects</a>
+        <a class="front__container__content__links__link" href="<?php echo $github ?>">GitHub</a>
       </div>
     </div>
   </div>
