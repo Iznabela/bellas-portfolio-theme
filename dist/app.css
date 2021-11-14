@@ -310,10 +310,10 @@ html.k-webkit.k-webkit78 {
   flex-direction: column;
   justify-content: space-around;
   padding: 2% 0 2% 0;
-  margin: 5% 0 5% 0;
+  margin: 3% 0 3% 0;
 }
 .projects__container__content__posts__post__title {
-  font-size: 36px;
+  font-size: 28px;
 }
 .projects__container__content__posts__post__description {
   padding: 2%;
@@ -321,8 +321,9 @@ html.k-webkit.k-webkit78 {
 .projects__container__content__posts__post__img {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2%;
+  width: 40%;
   height: auto;
-  width: 50%;
   border: 3px dashed black;
 }
 
@@ -341,7 +342,7 @@ html.k-webkit.k-webkit78 {
   color: whitesmoke;
 }
 .project__container__content {
-  padding: 5% 0 5% 0;
+  margin: 10% 0 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -349,11 +350,15 @@ html.k-webkit.k-webkit78 {
   height: 100%;
 }
 .project__container__content__title {
-  font-size: 48px;
+  font-size: 72px;
+}
+.project__container__content__description {
+  font-size: 16px;
 }
 .project__container__content__img {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3%;
   width: 80%;
   height: 100%;
   border: 3px dashed black;

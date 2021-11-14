@@ -12,7 +12,6 @@ get_header();
         $id = get_the_ID(); ?>
         <div class="projects__container__content__posts__post">
           <h2 class="projects__container__content__posts__post__title"><?php echo the_title(); ?></h2>
-          <p class="projects__container__content__posts__post__description"><?php echo the_excerpt(); ?></p>
         <?php 
         if ( has_post_thumbnail() ) {
           $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
@@ -30,6 +29,9 @@ get_header();
     </div>
   </div>
 </section>
+
 <?php
+
 get_footer();
+
 ?>
