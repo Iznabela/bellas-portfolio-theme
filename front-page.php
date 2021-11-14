@@ -13,7 +13,6 @@ $github = get_field('github_link');
 <div class="background" <?php if( $backgroundImage ) : ?>
         style="background-image: url(<?php echo $backgroundImage; ?>);"
     <?php endif; ?>>
-    <!-- <img src="<?php //echo $backgroundImage; ?>" class="backcontainer__photo" id="backcontainer__photo"> -->
 </div>
 <section class="front" id="front">
 <div class="front__banner"></div>
